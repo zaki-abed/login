@@ -1,0 +1,248 @@
+/* Import Font: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Start Variables */
+:root {
+    --background-linear-gradient: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    color: #1C1C1C;
+}
+/* End Global Rules */
+/* Start Login */
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login > div {
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 768px){
+    .login > div {
+        width: 100%;
+    }
+}
+
+.login .col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .col-1 h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.login .col-1 p {
+    color: #525252;
+    text-align: center;
+    margin-top: 0;
+}
+
+.login .col-1 form {
+    text-align: center;
+}
+
+.login .col-1 .form-input {
+    position: relative;
+}
+
+form > .form-input::before {
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 400;
+    position: absolute;
+    top: 17px;
+    left: 11px;
+    font-size: 14px;
+}
+
+.login .col-1 .form-input:nth-child(1):before {
+    content: "\f007";
+}
+
+.login .col-1 .form-input:nth-child(2):before {
+    content: "\f30d";
+}
+
+.login .col-1 input:not(input[type=submit]) {
+    width: 100%;
+    padding: 15px 15px 15px 30px;
+    background-color: #F0EDFFCC;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.login .col-1 input:not(input[type=submit])::placeholder {
+    color: #1C1C1C;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.login .col-1 input[type=submit] {
+    background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+    display: block;
+    margin: 25px auto;
+    padding: 18px 25px;
+    border: none;
+    color: #fff;
+    border-radius: 16px;
+    font-weight: 700;
+    box-shadow: 0px 8px 21px 0px #00000029;
+}
+
+.login .col-1 .login-text {
+    display: block;
+    color: #525252;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login .col-1 .login-text:before,
+.login .col-1 .login-text:after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #F0EDFF;
+    position: absolute;
+    top: 12px;
+}
+
+.login .col-1 .login-text::after {
+    right: 0;
+}
+
+.login .col-1 .login-text::before {
+    left: 0;
+}   
+
+.login .col-1 .social div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #F0EDFF;
+    padding: 12px;
+    border-radius: 16px;
+}
+
+.login .col-1 .social img {
+    width: 30px;
+}
+
+.login .col-1 .social span {
+    color: #1C1C1C;
+    display: block;
+}
+
+.login .col-2 {
+    background: linear-gradient(217.64deg, #9181F4 -5.84%, #5038ED 106.73%);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media (max-width: 768px){
+    .login .col-2 {
+        display: none;
+    }
+}
+
+.login .col-2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 300%;
+    background-image: url("../images/curves.png");
+    opacity: 0.06;
+}
+
+.login .col-2 .content {
+    background: #FFFFFF36;
+    width: 412px;
+    height: 530px;
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid #D9D9D9;
+}
+
+@media (max-width: 991px){
+    .login .col-2 .content {
+        width: 350px;
+    }
+}
+
+.login .col-2 .content h2 {
+    color: #fff;
+    font-size: 32px;
+    width: 191px;
+    line-height: 1.6;
+    margin-left: 25px;
+}
+
+@media (max-width: 991px){
+    .login .col-2 .content h2 {
+        font-size: 25px;
+    }
+}
+
+
+.login .col-2 .content img.person {
+    width: 785px;
+    position: absolute;
+    top: 7px;
+    right: -121px;
+}
+
+@media (max-width: 991px){
+    .login .col-2 .content img.person {
+        width: 732px;
+        top: 38px;
+        right: -102px;
+    }
+}
+
+.login .col-2 .content img.star {
+    width: 42px;    
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    bottom: 68px;
+    left: -21px;
+}
+
+/* End Login */

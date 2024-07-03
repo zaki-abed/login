@@ -1,0 +1,26 @@
+body {
+    direction: rtl;
+}
+/* Start Login */
+form > .form-input::before {
+    right: 11px;
+    left: auto;
+}
+
+.login .col-1 input:not(input[type=submit]) {
+    padding: 15px 30px 15px 15px;
+}
+
+.login .col-2 .content img.person {
+    right: 50px;
+}
+
+.login .col-2 .content img.star {
+    right: -21px;
+}
+
+.login .col-2 .content h2 {
+    margin-right: 15px;
+}
+
+/* End Login */
